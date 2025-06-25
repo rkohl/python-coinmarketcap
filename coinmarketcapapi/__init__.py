@@ -310,6 +310,16 @@ class CoinMarketCapAPI(object):
             '/cryptocurrency/listings/historical',
             **kwargs)
 
+    def cryptocurrency_listings_new(self, **kwargs):
+        """
+          New listings
+          See also :
+          https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsNew
+        """
+        return self.__get(
+            '/cryptocurrency/listings/new',
+            **kwargs)
+
     def cryptocurrency_quotes_latest(self, **kwargs):
         """
           Latest quotes
